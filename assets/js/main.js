@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initPortfolioFilters();
   initQuoteForm();
   initServiceSidebarActive();
+  initServiceSidebarToggle();
 });
 
 /* ---------- Mobile navbar toggle ---------- */
@@ -27,6 +28,19 @@ function initNavbarToggle() {
       links.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
     });
+  });
+}
+
+/* ---------- Collapsible sidebar (mobile) ---------- */
+function initServiceSidebarToggle() {
+  var toggle = document.querySelector(".service-sidebar__toggle");
+  var list = document.querySelector(".service-sidebar__list");
+
+  if (!toggle || !list) return;
+
+  toggle.addEventListener("click", function () {
+    var isOpen = list.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
 

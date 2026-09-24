@@ -6,6 +6,7 @@
 <title>Paper Printing | Ganesh Graphics & Designers</title>
 <meta name="description" content="Professional paper printing for every need — business cards, brochures, catalogues, posters and more.">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -38,13 +39,13 @@
     <h1 class="hero__title">Turn Your Ideas Into <span class="accent">Beautiful Prints</span></h1>
     <p class="hero__text">Premium paper printing with vibrant quality, custom sizes and fast turnaround — from business cards to brochures.</p>
     <div class="hero__highlights">
-      <div class="hero__highlight"><span class="icon-circle">✔</span> Print Quality</div>
-      <div class="hero__highlight"><span class="icon-circle">⚙</span> Reliable Operations</div>
-      <div class="hero__highlight"><span class="icon-circle">📐</span> Custom Sizes</div>
-      <div class="hero__highlight"><span class="icon-circle">⚡</span> Fast Turnaround</div>
+      <div class="hero__highlight"> <span class="icon-circle"><i class="fa-solid fa-check"></i></span> Print Quality</div>
+      <div class="hero__highlight"><span class="icon-circle"><i class="fa-solid fa-gear"></i></span> Reliable Operations</div>
+      <div class="hero__highlight"><span class="icon-circle"><i class="fa-solid fa-ruler-combined"></i></span> Custom Sizes</div>
+      <div class="hero__highlight"><span class="icon-circle"><i class="fa-solid fa-bolt"></i></span> Fast Turnaround</div>
     </div>
     <div class="hero__actions">
-      <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+      <a href="contact.html" class="btn btn-primary">Get a Free Quote →</a>
     </div>
   </div>
 </section>
@@ -53,8 +54,12 @@
 <section class="section">
   <div class="container service-layout">
     <aside class="service-sidebar">
-      <ul>
-        <li><a href="business-card-printing.html" class="active">Business Card Printing</a></li>
+      <button class="service-sidebar__toggle" aria-expanded="false">
+        <span>Browse Our Services</span>
+        <span class="service-sidebar__toggle-icon">▾</span>
+      </button>
+      <ul class="service-sidebar__list">
+        <li><a href="business-card-printing.html">Business Card Printing</a></li>
         <li><a href="#">Bill Book Printing</a></li>
         <li><a href="#">Poster Printing</a></li>
         <li><a href="#">Catalogue Printing</a></li>
@@ -75,25 +80,28 @@
 
       <div class="grid grid--4 grid--mt36">
         <div class="foundation-card foundation-card--center">
-          <div class="icon-circle">📚</div>
+          <div class="icon-circle"><i class="fa-solid fa-book"></i></div>
           <h3>Wide Range</h3>
           <p>12+ paper printing services under one roof.</p>
         </div>
         <div class="foundation-card foundation-card--center">
-          <div class="icon-circle">🎨</div>
+         <div class="icon-circle"><i class="fa-solid fa-palette"></i></div>
           <h3>Vibrant Printing</h3>
           <p>Rich, accurate colors on every print run.</p>
         </div>
         <div class="foundation-card foundation-card--center">
-          <div class="icon-circle">📐</div>
+          <div class="icon-circle"><i class="fa-solid fa-ruler-combined"></i></div>
           <h3>Custom Sizes</h3>
           <p>Printed to the exact dimensions you need.</p>
         </div>
         <div class="foundation-card foundation-card--center">
-          <div class="icon-circle">✨</div>
+          <div class="icon-circle"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
           <h3>Premium Finish</h3>
           <p>Matte, glossy and textured finish options.</p>
         </div>
+      </div>
+      <div class="pp">
+        <img src="./assets/images/pp-section.png">
       </div>
     </div>
   </div>
@@ -110,23 +118,23 @@
     </div>
     <div class="grid grid--5">
       <div class="card">
-        <div class="card__media"><img src="https://picsum.photos/seed/business-cards-pp/400/300" alt="Business Cards"></div>
+        <div class="card__media"><img src="./assets/images/business-cards.png" alt="Business Cards"></div>
         <div class="card__body"><h3 class="card__title card__title--sm">Business Cards</h3></div>
       </div>
       <div class="card">
-        <div class="card__media"><img src="https://picsum.photos/seed/brochures-pp/400/300" alt="Brochures"></div>
+        <div class="card__media"><img src="./assets/images/brochures.png" alt="Brochures"></div>
         <div class="card__body"><h3 class="card__title card__title--sm">Brochures</h3></div>
       </div>
       <div class="card">
-        <div class="card__media"><img src="https://picsum.photos/seed/catalogues-pp/400/300" alt="Catalogues"></div>
+        <div class="card__media"><img src="./assets/images/catalogues.png" alt="Catalogues"></div>
         <div class="card__body"><h3 class="card__title card__title--sm">Catalogues</h3></div>
       </div>
       <div class="card">
-        <div class="card__media"><img src="https://picsum.photos/seed/letterheads-pp/400/300" alt="Letterheads"></div>
+        <div class="card__media"><img src="./assets/images/letterheads.png" alt="Letterheads"></div>
         <div class="card__body"><h3 class="card__title card__title--sm">Letterheads</h3></div>
       </div>
       <div class="card">
-        <div class="card__media"><img src="https://picsum.photos/seed/posters-pp/400/300" alt="Posters"></div>
+        <div class="card__media"><img src="./assets/images/posters.png" alt="Posters"></div>
         <div class="card__body"><h3 class="card__title card__title--sm">Posters</h3></div>
       </div>
     </div>
@@ -164,7 +172,7 @@
 </section>
 
 <!-- ========== CTA ========== -->
-<section class="cta-banner">
+<section class="cta-banner-pp">
   <div class="container cta-banner__inner">
     <div class="cta-banner__left">
       <div>
@@ -186,16 +194,35 @@
             <img src="./assets/images/logo-white.png" alt="Ganesh Graphics & Designers logo">
           </a>
         </div>
-        <p>Your trusted partner for graphic design, printing, signage and branding solutions in Gurugram.</p>
+        <p>Your trusted partner for graphic design, printing, signage and branding solutions in Gurugram.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
       </div>
       <div class="footer-col">
         <h4>Our Services</h4>
         <ul>
-          <li><a href="#">Business Card Printing</a></li>
-          <li><a href="#">Brochure Printing</a></li>
-          <li><a href="#">Catalogue Printing</a></li>
-          <li><a href="#">Poster Printing</a></li>
-          <li><a href="#">Label Printing</a></li>
+          <li><a href="paper-printing.html">Multicolor business-card-printing</a></li>
+          <li><a href="signage-printing.html">Flex Printing</a></li>
+          <li><a href="signage-printing.html">Screen Printing</a></li>
+          <li><a href="paper-printing.html">Offset Printing</a></li>
+          <li><a href="signage-printing.html">Digital Printing</a></li>
+          <li><a href="paper-printing.html">Coggurated Box Printing</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -210,16 +237,16 @@
       <div class="footer-col">
         <h4>Contact Us</h4>
         <ul class="footer-contact">
-          <li><span class="icon">📍</span><span>Gurugram, Haryana, India</span></li>
-          <li><span class="icon">📞</span><span>+91 98765 43210</span></li>
-          <li><span class="icon">✉️</span><span>info@ganeshgraphics.in</span></li>
-          <li><span class="icon">🕒</span><span>Mon - Sat: 9:00 AM - 7:00 PM</span></li>
+          <li><span class="icon">📍</span><span>121-127, Khandsa Road, Gurugram - 122001</span></li>
+          <li><span class="icon">📞</span><span>+91 9891917422</span></li>
+          <li><span class="icon">✉️</span><span>ganeshgraphics02@gmail.com</span></li>
+          <!-- <li><span class="icon">🕒</span><span>Mon - Sat: 9:00 AM - 7:00 PM</span></li> -->
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2024 Ganesh Graphics &amp; Designers. All rights reserved.</span>
-      <span>Design. Print. Promote. Grow.</span>
+      <span>Web Development by CountryEdu Private Limited</span>
     </div>
   </div>
 </footer>
