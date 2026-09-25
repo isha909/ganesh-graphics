@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initQuoteForm();
   initServiceSidebarActive();
   initServiceSidebarToggle();
+  initNavDropdowns();
 });
 
 /* ---------- Mobile navbar toggle ---------- */
@@ -41,6 +42,20 @@ function initServiceSidebarToggle() {
   toggle.addEventListener("click", function () {
     var isOpen = list.classList.toggle("is-open");
     toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
+/* ---------- Nav dropdown toggle (mobile) ---------- */
+function initNavDropdowns() {
+  var toggles = document.querySelectorAll(".navbar__dropdown-toggle");
+
+  toggles.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      var menu = btn.closest(".navbar__dropdown").querySelector(".navbar__dropdown-menu");
+      var isOpen = menu.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", String(isOpen));
+    });
   });
 }
 
